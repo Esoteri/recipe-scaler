@@ -11,8 +11,12 @@ recipe = {
 
 print("Original recipe", recipe)
 
-scaling_factor = 2
-scaled_recipe = {
-    ingredient: quantity * scaling_factor for ingredient, quantity in recipe.items()
-}
+
+def scale_recipe(recipe, scaling_factor):
+    return {
+        ingredient: quantity * scaling_factor for ingredient, quantity in recipe.items()
+    }
+
+
+scaled_recipe = scale_recipe(recipe, 2)
 print("Scaled recipe", scaled_recipe)

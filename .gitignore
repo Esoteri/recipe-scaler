@@ -4,3 +4,9 @@ __pycache__/
 venv/
 .env
 .vscode/
+
+# Local SQLite database files
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
